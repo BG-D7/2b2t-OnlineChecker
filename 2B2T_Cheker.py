@@ -1,20 +1,17 @@
 #IMPORTS
 from mcstatus import MinecraftServer
-import colorama
-import random
 #INITIALIZE
-colorama.init()
 server = MinecraftServer.lookup("2b2t.org")
 #INIT Functions
 def CheckerClean(a):
 	try:
 		status=server.status()
 		if status.players.online>=5:
-			Response = colorama.Fore.BLACK + colorama.Back.GREEN + f"Онлайн: {status.players.online} игроков. Рестарт вроде прошёл. Сервер ответил в {status.latency} ms"
+			Response = f"Онлайн: {status.players.online} игроков. Рестарт вроде прошёл. Сервер ответил в {status.latency} ms"
 		else:
-			Response = colorama.Fore.BLACK + colorama.Back.YELLOW + f"Онлайн: {status.players.online} игроков. Рестарт вроде не прошёл. Сервер ответил в {status.latency} ms"
+			Response = f"Онлайн: {status.players.online} игроков. Рестарт вроде не прошёл. Сервер ответил в {status.latency} ms"
 	except:
-		Response = colorama.Fore.BLACK + colorama.Back.RED + "Ошибка"
+		Response = "Ошибка"
 	return Response
 #Checker
 print("2b2t online check by BG")
@@ -23,4 +20,4 @@ while True:
 	#Trying to check server
 	CheckResponse = CheckerClean(1)
 	print(CheckResponse)
-	print(colorama.Style.RESET_ALL)
+
