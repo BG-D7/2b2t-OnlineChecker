@@ -9,7 +9,10 @@ server = MinecraftServer.lookup("2b2t.org")
 def CheckerClean(a):
 	try:
 		status=server.status()
-		Response = colorama.Fore.BLACK + colorama.Back.GREEN + f"Онлайн: {status.players.online} игроков. Сервер ответил в {status.latency} ms"
+		if status.players.online>=5:
+			Response = colorama.Fore.BLACK + colorama.Back.GREEN + f"Онлайн: {status.players.online} игроков. Рестарт вроде прошёл. Сервер ответил в {status.latency} ms"
+		else:
+			Response = colorama.Fore.BLACK + colorama.Back.YELLOW + f"Онлайн: {status.players.online} игроков. Рестарт вроде не прошёл. Сервер ответил в {status.latency} ms"
 	except:
 		Response = colorama.Fore.BLACK + colorama.Back.RED + "Ошибка"
 	return Response
