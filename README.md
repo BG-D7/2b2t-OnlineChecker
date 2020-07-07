@@ -14,3 +14,4 @@ Moneymod lite
 4. Готово!
 
 Разработано BG-D7, вдохновлено манимодом mrnv'а
+Developed by BG-D7
