@@ -13,5 +13,5 @@ Moneymod lite
 3. Запусти MoneymodLite.py или MoneymodLite_color.py
 4. Готово!
 
-Разработано BG-D7, вдохновлено манимодом mrnv'а
+Разработано BG-D7, вдохновлено манимодом mrnv'а    
 Developed by BG-D7
