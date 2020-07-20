@@ -1,7 +1,6 @@
 #IMPORTS
 from mcstatus import MinecraftServer
 import colorama
-import random
 #INITIALIZE
 colorama.init()
 server = MinecraftServer.lookup("2b2t.org")
