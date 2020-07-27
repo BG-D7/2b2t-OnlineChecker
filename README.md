@@ -6,6 +6,7 @@ Installing:
 2. Install requests python module (For example, through pip) (only for jewtrick framework edition)
 3. Run the file 2B2T_Cheker.py
 4. Done!
+Or run MoneyModLite.exe
 
 Moneymod lite
 Установка:
@@ -14,6 +15,7 @@ Moneymod lite
 2. Установи модуль requests для питона (К примеру через pip) (pip install requests) (только для jewtrick издания)
 3. Запусти MoneymodLite.py или MoneymodLite_color.py
 4. Готово!
+Или запусти MoneyModLite.exe
 
 Разработано BG-D7, вдохновлено манимодом mrnv'а    
 Developed by BG-D7
