@@ -9,9 +9,9 @@ def CheckerClean(a):
 		if status.players.online>=75:
 			Response = f"Онлайн: {status.players.online} игроков. Рестарт вроде прошёл. Сервер ответил в {status.latency} ms"
 		else:
-			Response = "null"
+			Response = f"Онлайн: {status.players.online} игроков. Рестарт вроде не прошёл. Сервер ответил в {status.latency} ms"
 	except:
-		Response = "null"
+		Response = "Ошибка"
 	return Response
 print("Money Mod lite by BG")
 
